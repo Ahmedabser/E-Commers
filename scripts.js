@@ -30,3 +30,17 @@ document.querySelectorAll("button").forEach(button => {
         addToCart(productName);
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // يمنع إعادة تحميل الصفحة
+
+        alert("✅ Your message has been sent successfully!");
+        
+        // تفريغ الحقول بعد الإرسال
+        form.reset();
+    });
+});

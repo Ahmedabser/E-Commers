@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+/*علشان لما اعمل سكرول يكون بسلاسة*/
+
 body {
     /* background-image: url(imege/backround-page.jpg);
     background-size: cover;
@@ -176,13 +181,13 @@ nav ul li a:hover {
 }
 
 /* Special Offers Section */
-#special-offers {
+#offers {
     background-color: #f7d9d9;
     padding: 60px 20px;
     text-align: center;/* علشان النص يكون في الوسط */
 }
 
-#special-offers h2 {
+#offers h2 {
     font-size: 2.5rem;
     font-weight: 600;
     color: #333;
@@ -375,6 +380,59 @@ nav ul li a:hover {
         width: 100%;
         margin-bottom: 30px;
     }
+}
+
+/* 🔹 تنسيق قسم التواصل */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* 🔹 تنسيق العنوان */
+#contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 🔹 تنسيق النموذج */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 تنسيق المدخلات */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 🔹 تنسيق زر الإرسال */
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔹 تأثير عند تمرير الماوس */
+.contact-form button:hover {
+    background-color: #0056b3;
 }
 
 
