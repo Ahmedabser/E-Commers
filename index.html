@@ -25,7 +25,7 @@
             <div class="logo">
                 <h1>BOSRA BRAND</h1>
             </div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#reviews">Reviews</a></li>
@@ -36,14 +36,12 @@
                 <span id="cart-count">0</span>
                 <a href="cart.html"><img src="imege/cart.jpg" alt="Cart" id="cart-icon"></a>
             </div>
-            <div class="menu-icon">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i> <!-- أيقونة الهامبورجر -->
             </div>
         </nav>
     </header>
-
+    
     <!-- Hero Section -->
     <!-- Products Section -->
     <span class="section-title">
@@ -85,7 +83,7 @@
 
     <!-- Customer Reviews Section -->
     <section id="reviews">
-        <h2 >Customer Reviews</h2>
+        <h2>Customer Reviews</h2>
         <div class="review-card">
             <p>"Great quality products! The pens are smooth and the bag is very comfortable!"</p>
             <h4>- Ahmed Ali</h4>
@@ -105,23 +103,23 @@
 
     <!-- Special Offers Section -->
     <section id="offers">
-        <h2 data-aos="fade-left">Special Offers 🎉</h2>
-        <p data-aos="fade-right">Check out our latest discounts and special deals!</p>
-        <div class="offer-card">
+        <h2>Special Offers 🎉</h2>
+        <p>Check out our latest discounts and special deals!</p>
+        <div class="offer-card" data-aos="fade-left">
             <img src="imege/offer1.jpg" alt="Offer 1">
             <h3>50% OFF on Ballpoint Pens</h3>
             <p>Get 50% discount on all ballpoint pens. Limited time offer!</p>
             <button>Shop Now</button>
         </div>
 
-        <div class="offer-card">
+        <div class="offer-card" data-aos="fade-left">
             <img src="imege/offer2.jpg" alt="Offer 2">
             <h3>Buy 1 Get 1 Free on Notebooks</h3>
             <p>Buy one notebook and get another one free. Hurry up!</p>
             <button>Shop Now</button>
         </div>
 
-        <div class="offer-card">
+        <div class="offer-card"  data-aos="fade-left">
             <img src="imege/offer3.jpg" alt="Offer 3">
             <h3>30% OFF on School Bags</h3>
             <p>Save 30% on school bags. Limited stock available!</p>
@@ -131,7 +129,7 @@
        
     <!-- Best Sellers Section -->
     <section id="best-sellers">
-        <h2 data-aos="fade-left">Best Sellers</h2>
+        <h2>Best Sellers</h2>
         <div class="best-seller-card" data-aos="fade-right">
             <img src="imege/backround-page.jpg" alt="Best Seller 1">
             <h3>Luxury Pen Set</h3>

@@ -11,6 +11,8 @@ body {
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -21,10 +23,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 30px;
+    background: #1e3c72; /* لون خلفية */
+    color: white;
 }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
 .navbar h1 {
     color: white;
-    margin: 0;
+    margin:5px ;
     font-weight: bold;
     font-size: 24px;
     letter-spacing: 1px;
@@ -59,7 +80,37 @@ nav ul li a:hover {
     justify-content: space-around;
     height: 24px;
     width: 30px;
+    font-size: 24px;
+    color: white;
 }
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background:black;
+        position: absolute;
+        /*🛠️تثبيتالقائمةفوقالعناصر*/top: 25%;
+        /*🛠️تظهرأسفلالنافبارمباشرة*/right: 0;
+        width: 250px;
+        padding: 10px 0;
+        border-radius:5px ;
+        text-align: center;
+        z-index: 1000;
+        /*✅جعلالقائمةفوقكلالعناصر*/
+}
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 1100; /* ✅ أيقونة القائمة فوق كل شيء */
+        position: relative;
+    }
+}
+
+
 
 .menu-icon .bar {
     /* البارات اللي هتظهر لما يتفعل الزرار */
@@ -466,3 +517,5 @@ footer {
         align-items: center;
     }
 }
+
+
